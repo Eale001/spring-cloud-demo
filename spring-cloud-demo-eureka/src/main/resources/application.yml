@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo-eureka
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    # 开启显示地址
+    prefer-ip-address: true
+    # eureka页面显示IP地址：端口号
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: localhost
+  client:
+    # 是否要注册到eureka
+    register-with-eureka: false
+    # 表示是否从Eureka Server获取注册信息
+    fetch-registry: false
+    service-url:
+      defautZone: http://${eureka.instance.hostname}:${server.port}/eureka
+
