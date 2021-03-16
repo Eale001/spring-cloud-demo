@@ -1,0 +1,10 @@
+server:
+  port: 9666
+
+spring:
+  application:
+    name: producer-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.11.246:9999
