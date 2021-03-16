@@ -11,6 +11,7 @@
         <module>spring-cloud-demo-config</module>
         <module>spring-cloud-demo-config-client</module>
         <module>spring-cloud-demo-hystrix</module>
+        <module>spring-cloud-demo-zookeeper-lock</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
